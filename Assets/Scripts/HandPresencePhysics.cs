@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HandPresencePhysics : MonoBehaviour
 {
+
     public Transform target;
     public Renderer nonPhysicalHand;
     public float showNonPhysicalHandDistance = 0.05f;
@@ -11,12 +12,15 @@ public class HandPresencePhysics : MonoBehaviour
     private Collider[] handColliders;
 
    private void Start()
+
     {
         rb = GetComponent<Rigidbody>();
         handColliders = GetComponentsInChildren<Collider>();
     }
 
+
     public void EnableHandCollider() 
+
     {
         foreach (var item in handColliders)
         {
@@ -24,12 +28,16 @@ public class HandPresencePhysics : MonoBehaviour
         }
     }
 
+
     public void EnableHandColliderDelay(float delay) 
+
     {
         Invoke("EnableHandCollider", delay);
     }
 
+
     public void DisableHandCollider() 
+
     {
         foreach (var item in handColliders)
         {
@@ -41,6 +49,7 @@ public class HandPresencePhysics : MonoBehaviour
     {
         float distance = Vector3.Distance(transform.position, target.position);
 
+
         if (distance>showNonPhysicalHandDistance)
             nonPhysicalHand.enabled = true;
         else
@@ -51,6 +60,7 @@ public class HandPresencePhysics : MonoBehaviour
    private void FixedUpdate()
     {
         rb.velocity = (target.position - transform.position) / Time.deltaTime;
+
 
         Quaternion rotationDifference = target.rotation * Quaternion.Inverse(transform.rotation);
         rotationDifference.ToAngleAxis(out float angleInDegree, out Vector3 rotationAxis);

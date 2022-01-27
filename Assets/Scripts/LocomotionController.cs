@@ -36,7 +36,9 @@ public class LocomotionController : MonoBehaviour
         {
             bool isRightInteractorRayHovering = rightInteractorRay.TryGetHitInfo(out pos, out norm, out index, out validTarget);
 
-            rightTeleportRay.gameObject.SetActive(EnableRightTeleport && CheckIfActivated(rightTeleportRay) && isRightInteractorRayHovering);
+
+            rightTeleportRay.gameObject.SetActive(EnableLeftTeleport && CheckIfActivated(rightTeleportRay) && isRightInteractorRayHovering);
+
         }
 
     }
