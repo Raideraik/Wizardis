@@ -8,18 +8,17 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Interactable
+  - 
   - Water
   - UI
   - Grab
   - Ground
   - Body
-
-  - Left Hand Physics
-  - Right Hand Physics
-  - 'NonPhysics Hand '
-  - 
-
+  - GrabIgnoreRay
+  - RightHandPresence
+  - LeftHandPresence
+  - RightHandPhysics
+  - LeftHandPhysics
   - 
   - 
   - 

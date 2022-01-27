@@ -6,21 +6,19 @@ public class HandPresencePhysics : MonoBehaviour
 {
 
     public Transform target;
+    private Rigidbody rb;
     public Renderer nonPhysicalHand;
     public float showNonPhysicalHandDistance = 0.05f;
-    private Rigidbody rb;
     private Collider[] handColliders;
 
-   private void Start()
-
+    // Start is called before the first frame update
+    void Start()
     {
         rb = GetComponent<Rigidbody>();
         handColliders = GetComponentsInChildren<Collider>();
     }
 
-
-    public void EnableHandCollider() 
-
+    public void EnableHandCollider()
     {
         foreach (var item in handColliders)
         {
@@ -28,16 +26,12 @@ public class HandPresencePhysics : MonoBehaviour
         }
     }
 
-
-    public void EnableHandColliderDelay(float delay) 
-
+    public void EnableHandColliderDelay(float delay)
     {
         Invoke("EnableHandCollider", delay);
     }
 
-
-    public void DisableHandCollider() 
-
+    public void DisableHandCollider()
     {
         foreach (var item in handColliders)
         {
@@ -49,19 +43,20 @@ public class HandPresencePhysics : MonoBehaviour
     {
         float distance = Vector3.Distance(transform.position, target.position);
 
-
-        if (distance>showNonPhysicalHandDistance)
+        if (distance > showNonPhysicalHandDistance)
+        {
             nonPhysicalHand.enabled = true;
+        }
         else
             nonPhysicalHand.enabled = false;
-
     }
 
-   private void FixedUpdate()
+    void FixedUpdate()
     {
-        rb.velocity = (target.position - transform.position) / Time.deltaTime;
+        //position
+        rb.velocity = (target.position - transform.position) / Time.fixedDeltaTime;
 
-
+        //rotation
         Quaternion rotationDifference = target.rotation * Quaternion.Inverse(transform.rotation);
         rotationDifference.ToAngleAxis(out float angleInDegree, out Vector3 rotationAxis);
 
