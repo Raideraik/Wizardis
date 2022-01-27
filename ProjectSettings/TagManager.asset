@@ -11,14 +11,14 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Grab
+  - Ground
+  - Body
+  - GrabIgnoreRay
+  - RightHandPresence
+  - LeftHandPresence
+  - RightHandPhysics
+  - LeftHandPhysics
   - 
   - 
   - 
