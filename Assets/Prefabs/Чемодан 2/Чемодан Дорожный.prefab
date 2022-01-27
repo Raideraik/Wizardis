@@ -90,6 +90,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1287736890871946112}
+  - component: {fileID: 7656696054988501167}
   m_Layer: 0
   m_Name: "\u0427\u0435\u043C\u043E\u0434\u0430\u043D \u0414\u043E\u0440\u043E\u0436\u043D\u044B\u0439"
   m_TagString: Untagged
@@ -104,7 +105,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 296279258955727061}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.19, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -147,7 +148,20 @@ Transform:
   - {fileID: 8698768176159617542}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!65 &7656696054988501167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296279258955727061}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.31, y: 0.91, z: 0.52}
+  m_Center: {x: 0, y: 0, z: -0.03}
 --- !u!1 &373615289812926684
 GameObject:
   m_ObjectHideFlags: 0
