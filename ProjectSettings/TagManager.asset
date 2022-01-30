@@ -15,11 +15,11 @@ TagManager:
   - Ground
   - Body
   - GrabIgnoreRay
-  - RightHandPresence
-  - LeftHandPresence
+  - 
+  - 
   - RightHandPhysics
   - LeftHandPhysics
-  - 
+  - NonPhysicsHand
   - 
   - 
   - 
