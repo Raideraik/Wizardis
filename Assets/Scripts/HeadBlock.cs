@@ -7,6 +7,8 @@ public class HeadBlock : MonoBehaviour
 {
     //private Collider head;
     public GameObject head;
+    public GameObject canvas;
+
 
 
     void Start()
@@ -14,45 +16,40 @@ public class HeadBlock : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Wall"))
-        {
-            head.SetActive(true);
-            Debug.Log("MyOtherTag");
-        }
-        else
-        {
-            head.SetActive(false);
-            Debug.Log("neTag");
-        }
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Wall")
         {
             head.SetActive(true);
-            Debug.Log("MyOtherTag");
+            canvas.SetActive(true);
         }
  
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Wall")
+        {
+            head.SetActive(true);
+            canvas.SetActive(true);
+        }
+    }
+
     private void OnTriggerExit(Collider other)
 
     {
         if (other.gameObject.tag == "Wall")
         {
             head.SetActive(false);
-            Debug.Log("neTag");
+            canvas.SetActive(false);
+
         }
     }
-
 
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
