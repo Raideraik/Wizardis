@@ -1505,6 +1505,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1399033592195523982, guid: b44568d325deafe47835b18589d6ede2, type: 3}
+      propertyPath: m_InvalidColorGradient.atime1
+      value: 65150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1399033592195523982, guid: b44568d325deafe47835b18589d6ede2, type: 3}
+      propertyPath: m_InvalidColorGradient.key0.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1399033592195523982, guid: b44568d325deafe47835b18589d6ede2, type: 3}
+      propertyPath: m_InvalidColorGradient.key1.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1399033592195523983, guid: b44568d325deafe47835b18589d6ede2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4e58e929e5ab8d7479eebbc5baf31c64, type: 2}
+    - target: {fileID: 1399033593080471286, guid: b44568d325deafe47835b18589d6ede2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1399033593080471287, guid: b44568d325deafe47835b18589d6ede2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 1399033593080471288, guid: b44568d325deafe47835b18589d6ede2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1399033593080471288, guid: b44568d325deafe47835b18589d6ede2, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1399033593080471288, guid: b44568d325deafe47835b18589d6ede2, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1399033593080471288, guid: b44568d325deafe47835b18589d6ede2, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1399033593080471288, guid: b44568d325deafe47835b18589d6ede2, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1399033593080471290, guid: b44568d325deafe47835b18589d6ede2, type: 3}
+      propertyPath: fadeColor.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2714102431643270594, guid: b44568d325deafe47835b18589d6ede2, type: 3}
       propertyPath: m_Enabled
       value: 1
